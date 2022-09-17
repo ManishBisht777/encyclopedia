@@ -1,0 +1,86 @@
+[
+  {
+    "type": {
+      "background": "https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg",
+      "title": "Wildlife",
+      "description": "Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.",
+      "total": 100,
+      "endangered": 200,
+      "extinct": 300,
+      "list": [
+        {
+          "animal": {
+            "name:": "dog",
+            "desc": "dog desc"
+          }
+        },
+        {
+          "animal": {
+            "name:": "horse",
+            "desc": "horse desc"
+          }
+        },
+        {
+          "animal": {
+            "name:": "man",
+            "desc": "man desc"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": {
+      "background": "https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg",
+      "title": "IN SKY",
+      "description": "Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.",
+      "total": 100,
+      "endangered": 200,
+      "extinct": 300,
+      "list": [
+        {
+          "bird": {
+            "name:": "bird",
+            "desc": "dog desc"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": {
+      "background": "https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg",
+      "title": "IN WATER",
+      "description": "Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.",
+      "total": 100,
+      "endangered": 200,
+      "extinct": 300,
+      "list": [
+        {
+          "bird": {
+            "name:": "bird",
+            "desc": "dog desc"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": {
+      "background": "https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412462/encyclopedia/backgrounds/bgReindeer_wqyl5z.jpg",
+      "title": "IN WATER",
+      "description": "Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.",
+      "total": 100,
+      "endangered": 200,
+      "extinct": 300,
+      "list": [
+        {
+          "bird": {
+            "name:": "bird",
+            "desc": "dog desc"
+          }
+        }
+      ]
+    }
+  }
+]
