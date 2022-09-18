@@ -41,6 +41,25 @@ const Home = () => {
     mastertimeline.add(pinBackground());
   }, []);
 
+  useEffect(() => {
+    let sections = gsap.utils.toArray(".BirdStats");
+
+    console.log(sections.length);
+
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".BirdStats",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        // base vertical scrolling on how wide the container is so it feels more natural.
+        end: "+=3000",
+      },
+    });
+  }, []);
+
   return (
     <div className="home">
       <div className="HomePageSlider">

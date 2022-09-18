@@ -47,15 +47,24 @@
   color: rgba(25, 148, 0, 0.849);
   font-size: 2rem;
 }
-.home .wildLifeStats .BirdStats {
+.home .wildLifeStats .statbox {
+  width: 300%;
+  display: flex;
+  height: 100vh;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  flex-wrap: nowrap;
+  overscroll-behavior: none;
+}
+.home .wildLifeStats .statbox .BirdStats {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 10rem 1rem;
+  width: 100%;
 }
-.home .wildLifeStats .BirdStats .birdwrapper {
+.home .wildLifeStats .statbox .BirdStats .birdwrapper {
   position: relative;
   margin-left: 5rem;
   border: 1px solid rgba(255, 255, 255, 0.253);
@@ -66,7 +75,7 @@
   max-width: 300px;
   margin: 2rem;
 }
-.home .wildLifeStats .BirdStats .birdwrapper h2 {
+.home .wildLifeStats .statbox .BirdStats .birdwrapper h2 {
   position: absolute;
   font-size: 2rem;
   transform: rotate(-90deg);
@@ -74,17 +83,17 @@
   text-transform: uppercase;
   margin-left: -7rem;
 }
-.home .wildLifeStats .BirdStats .birdwrapper h4 {
+.home .wildLifeStats .statbox .BirdStats .birdwrapper h4 {
   color: #426b00;
   font-size: 1.5rem;
 }
-.home .wildLifeStats .BirdStats .birdwrapper p {
+.home .wildLifeStats .statbox .BirdStats .birdwrapper p {
   color: #cacaca;
   font-size: 0.8rem;
   text-align: left;
   font-weight: 200;
 }
-.home .wildLifeStats .BirdStats .birdwrapper button {
+.home .wildLifeStats .statbox .BirdStats .birdwrapper button {
   padding: 0.5rem 1rem;
   border: none;
   width: -webkit-fit-content;
@@ -94,39 +103,39 @@
   background: #6a7e48;
   color: rgba(202, 202, 202, 0.712);
 }
-.home .wildLifeStats .BirdStats:nth-child(1) {
+.home .wildLifeStats .statbox .BirdStats:nth-child(1) {
   background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg") no-repeat center/cover;
   background-color: rgba(0, 0, 0, 0.616);
   background-blend-mode: darken;
 }
-.home .wildLifeStats .BirdStats:nth-child(2) {
+.home .wildLifeStats .statbox .BirdStats:nth-child(2) {
   background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg") no-repeat center/cover;
   background-color: rgba(0, 0, 0, 0.616);
   background-blend-mode: darken;
 }
-.home .wildLifeStats .BirdStats:nth-child(2) .birdwrapper h2 {
+.home .wildLifeStats .statbox .BirdStats:nth-child(2) .birdwrapper h2 {
   margin-left: -9rem;
   color: rgba(255, 255, 255, 0.774);
 }
-.home .wildLifeStats .BirdStats:nth-child(2) .birdwrapper h4 {
+.home .wildLifeStats .statbox .BirdStats:nth-child(2) .birdwrapper h4 {
   color: rgba(255, 255, 255, 0.5490196078);
 }
-.home .wildLifeStats .BirdStats:nth-child(2) .birdwrapper button {
+.home .wildLifeStats .statbox .BirdStats:nth-child(2) .birdwrapper button {
   background: #010507;
 }
-.home .wildLifeStats .BirdStats:nth-child(3) {
+.home .wildLifeStats .statbox .BirdStats:nth-child(3) {
   background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg") no-repeat center/cover;
   background-color: rgba(0, 0, 0, 0.616);
   background-blend-mode: darken;
 }
-.home .wildLifeStats .BirdStats:nth-child(3) .birdwrapper h2 {
+.home .wildLifeStats .statbox .BirdStats:nth-child(3) .birdwrapper h2 {
   color: #1f6d86;
   margin-left: -9rem;
 }
-.home .wildLifeStats .BirdStats:nth-child(3) .birdwrapper h4 {
+.home .wildLifeStats .statbox .BirdStats:nth-child(3) .birdwrapper h4 {
   color: #597f9f;
 }
-.home .wildLifeStats .BirdStats:nth-child(3) .birdwrapper button {
+.home .wildLifeStats .statbox .BirdStats:nth-child(3) .birdwrapper button {
   background: #08242f;
 }
 
