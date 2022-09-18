@@ -1,0 +1,179 @@
+.home {
+  background: rgb(245, 245, 245);
+
+  .wildLifeStats {
+    position: relative;
+    overflow-x: hidden;
+
+    .WildLifeHeadingbg {
+      width: 100%;
+      height: 100vh;
+      background: url("../assets/backgrounds/bg.jpg") no-repeat center/cover;
+      background-color: rgba(0, 0, 0, 0.753);
+      background-blend-mode: darken;
+      // position: absolute;
+      top: 0;
+    }
+
+    .WildLifeHeading {
+      width: 100%;
+      height: 0;
+      flex-direction: column;
+      display: flex;
+      color: rgba(255, 255, 255, 0.582);
+      justify-content: center;
+      align-items: center;
+      font-size: 4rem;
+      padding: auto;
+      text-align: center;
+      bottom: 0;
+      gap: 2rem;
+      overflow: visible;
+
+      position: relative;
+
+      h2 {
+        opacity: 0;
+        top: 0;
+        scale: 0;
+        position: relative;
+        z-index: 10;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        span {
+          font-size: 1rem;
+        }
+      }
+
+      .Letsview {
+        color: rgba(25, 148, 0, 0.849);
+        font-size: 2rem;
+      }
+    }
+
+    .BirdStats {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10rem 1rem;
+
+      .birdwrapper {
+        position: relative;
+        margin-left: 5rem;
+        border: 1px solid rgba(255, 255, 255, 0.253);
+        padding: 2rem 2rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 2rem;
+
+        h2 {
+          position: absolute;
+          font-size: 2rem;
+          transform: rotate(-90deg);
+          // color: #1a2902;
+          color: #060a01;
+
+          text-transform: uppercase;
+          margin-left: -7rem;
+        }
+
+        h4 {
+          color: #426b00;
+          font-size: 1.5rem;
+        }
+        p {
+          color: #cacaca;
+          font-size: 0.8rem;
+          text-align: left;
+          font-weight: 200;
+        }
+
+        button {
+          padding: 0.5rem 1rem;
+          border: none;
+          width: fit-content;
+          cursor: pointer;
+          background: #6a7e48;
+          color: rgba(202, 202, 202, 0.712);
+        }
+      }
+    }
+
+    .BirdStats:nth-child(1) {
+      background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg")
+        no-repeat center/cover;
+      background-color: rgba(0, 0, 0, 0.616);
+
+      background-blend-mode: darken;
+    }
+    .BirdStats:nth-child(2) {
+      background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg")
+        no-repeat center/cover;
+      background-color: rgba(0, 0, 0, 0.616);
+
+      background-blend-mode: darken;
+
+      .birdwrapper {
+        h2 {
+          margin-left: -9rem;
+          color: rgba(255, 255, 255, 0.774);
+        }
+        h4 {
+          color: #ffffff8c;
+        }
+        button {
+          background: #010507;
+        }
+      }
+    }
+    .BirdStats:nth-child(3) {
+      background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg")
+        no-repeat center/cover;
+      background-color: rgba(0, 0, 0, 0.616);
+      background-blend-mode: darken;
+
+      .birdwrapper {
+        h2 {
+          color: #1f6d86;
+          margin-left: -9rem;
+        }
+        h4 {
+          color: #597f9f;
+        }
+        button {
+          background: #08242f;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    .wildLifeStats {
+      .WildLifeHeading {
+        h2 {
+          font-size: 2rem;
+          span {
+            font-size: 0.5rem;
+          }
+        }
+
+        .Letsview {
+          font-size: 1rem;
+        }
+      }
+
+      .BirdStats {
+        padding: 4rem 1rem;
+      }
+    }
+  }
+}
