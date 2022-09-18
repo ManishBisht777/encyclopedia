@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Slider from "../components/LandingPageslider/slider";
 import "./home.css";
-import image from "../assets/backgrounds/bg2.jpg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -9,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const bgref = useRef(null);
-  const birdbgref = useRef(null);
 
   useEffect(() => {
     function pinBackground() {
