@@ -170,6 +170,26 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section className="typebx">
+          <div className="card">
+            <img
+              src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg"
+              alt=""
+            />
+          </div>
+          <div className="card">
+            <img
+              src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg"
+              alt=""
+            />
+          </div>
+          <div className="card">
+            <img
+              src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg"
+              alt=""
+            />
+          </div>
+        </section>
       </div>
     </div>
   );

@@ -143,6 +143,59 @@
 .home .wildLifeStats .statbox .birddiv .BirdStats:nth-child(3) .birdwrapper button {
   background: #08242f;
 }
+.home .wildLifeStats .typebx {
+  display: flex;
+  flex-wrap: wrap;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  width: 100%;
+  min-height: 100vh;
+  gap: 2rem;
+  padding: 2rem;
+  background: #001929;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home .wildLifeStats .typebx .card {
+  width: 300px;
+  height: 250px;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.home .wildLifeStats .typebx .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home .wildLifeStats .typebx .card:hover {
+  scale: 1.3;
+  transition: 0.3s ease-in-out;
+  z-index: 10;
+}
+.home .wildLifeStats .typebx .card::after {
+  content: "View Details";
+  font-size: 2rem;
+  position: absolute;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.616);
+  color: rgba(255, 255, 255, 0.582);
+  display: none;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.home .wildLifeStats .typebx .card:hover::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
 
 @media screen and (max-width: 768px) {
   .home .wildLifeStats .WildLifeHeading h2 {
