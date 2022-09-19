@@ -50,12 +50,16 @@ const Home = () => {
       xPercent: -100 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
-        trigger: ".BirdStats",
+        trigger: ".statbox",
         pin: true,
         scrub: 1,
-        snap: 1 / (sections.length - 1),
+        snap: {
+          snapTo: 1 / (sections.length - 1),
+          inertia: false,
+          duration: { min: 0.1, max: 0.1 },
+        },
         // base vertical scrolling on how wide the container is so it feels more natural.
-        end: "+=3000",
+        end: "+=" + (sections.length - 1) * 650,
       },
     });
   }, []);
@@ -76,91 +80,93 @@ const Home = () => {
           </h2>
         </div>
         <section className="statbox">
-          <div className="BirdStats">
-            <div className="birdwrapper">
-              <h2>Birds</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
+          <div className="birddiv">
+            <div className="BirdStats">
+              <div className="birdwrapper">
+                <h2>Birds</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
+              <div className="birdwrapper">
+                <h2>Birds</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
+              <div className="birdwrapper">
+                <h2>Birds</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
             </div>
-            <div className="birdwrapper">
-              <h2>Birds</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
+            <div className="BirdStats">
+              <div className="birdwrapper">
+                <h2>Animals</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
+              <div className="birdwrapper">
+                <h2>Animals</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
+              <div className="birdwrapper">
+                <h2>Animals</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
             </div>
-            <div className="birdwrapper">
-              <h2>Birds</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
-            </div>
-          </div>
-          <div className="BirdStats">
-            <div className="birdwrapper">
-              <h2>Animals</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
-            </div>
-            <div className="birdwrapper">
-              <h2>Animals</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
-            </div>
-            <div className="birdwrapper">
-              <h2>Animals</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
-            </div>
-          </div>
-          <div className="BirdStats">
-            <div className="birdwrapper">
-              <h2>Swimmer</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
-            </div>
-            <div className="birdwrapper">
-              <h2>Swimmer</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
-            </div>
-            <div className="birdwrapper">
-              <h2>Swimmer</h2>
-              <h4>Total Species</h4>
-              <p>
-                We see that there are more than 11,000 described bird species in
-                the world.
-              </p>
-              <button>View Article</button>
+            <div className="BirdStats">
+              <div className="birdwrapper">
+                <h2>Swimmer</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
+              <div className="birdwrapper">
+                <h2>Swimmer</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
+              <div className="birdwrapper">
+                <h2>Swimmer</h2>
+                <h4>Total Species</h4>
+                <p>
+                  We see that there are more than 11,000 described bird species
+                  in the world.
+                </p>
+                <button>View Article</button>
+              </div>
             </div>
           </div>
         </section>

@@ -55,110 +55,115 @@
     }
 
     .statbox {
-      width: 300%;
-      display: flex;
+      overscroll-behavior: none;
       height: 100vh;
-      overscroll-behavior: none;
-      flex-wrap: nowrap;
-      overscroll-behavior: none;
 
-      .BirdStats {
-        position: relative;
+      .birddiv {
+        width: 300%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        // padding: 10rem 1rem;
-        width: 100%;
-        // min-height: 100vh;
+        height: 100%;
+        overscroll-behavior: none;
+        flex-wrap: nowrap;
 
-        .birdwrapper {
+        .BirdStats {
           position: relative;
-          margin-left: 5rem;
-          border: 1px solid rgba(255, 255, 255, 0.253);
-          padding: 2rem 2rem;
-          gap: 1rem;
           display: flex;
-          flex-direction: column;
-          max-width: 300px;
-          margin: 2rem;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          // padding: 10rem 1rem;
+          width: 100vw;
+          min-height: 100vh;
+          // min-height: 100vh;
 
-          h2 {
-            position: absolute;
-            font-size: 2rem;
-            transform: rotate(-90deg);
-            // color: #1a2902;
-            color: #060a01;
+          .birdwrapper {
+            position: relative;
+            margin-left: 5rem;
+            border: 1px solid rgba(255, 255, 255, 0.253);
+            padding: 2rem 2rem;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 2rem;
 
-            text-transform: uppercase;
-            margin-left: -7rem;
-          }
+            h2 {
+              position: absolute;
+              font-size: 2rem;
+              transform: rotate(-90deg);
+              // color: #1a2902;
+              color: #060a01;
 
-          h4 {
-            color: #426b00;
-            font-size: 1.5rem;
-          }
-          p {
-            color: #cacaca;
-            font-size: 0.8rem;
-            text-align: left;
-            font-weight: 200;
-          }
+              text-transform: uppercase;
+              margin-left: -7rem;
+            }
 
-          button {
-            padding: 0.5rem 1rem;
-            border: none;
-            width: fit-content;
-            cursor: pointer;
-            background: #6a7e48;
-            color: rgba(202, 202, 202, 0.712);
-          }
-        }
-      }
+            h4 {
+              color: #426b00;
+              font-size: 1.5rem;
+            }
+            p {
+              color: #cacaca;
+              font-size: 0.8rem;
+              text-align: left;
+              font-weight: 200;
+            }
 
-      .BirdStats:nth-child(1) {
-        background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg")
-          no-repeat center/cover;
-        background-color: rgba(0, 0, 0, 0.616);
-
-        background-blend-mode: darken;
-      }
-      .BirdStats:nth-child(2) {
-        background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg")
-          no-repeat center/cover;
-        background-color: rgba(0, 0, 0, 0.616);
-
-        background-blend-mode: darken;
-
-        .birdwrapper {
-          h2 {
-            margin-left: -9rem;
-            color: rgba(255, 255, 255, 0.774);
-          }
-          h4 {
-            color: #ffffff8c;
-          }
-          button {
-            background: #010507;
+            button {
+              padding: 0.5rem 1rem;
+              border: none;
+              width: fit-content;
+              cursor: pointer;
+              background: #6a7e48;
+              color: rgba(202, 202, 202, 0.712);
+            }
           }
         }
-      }
-      .BirdStats:nth-child(3) {
-        background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg")
-          no-repeat center/cover;
-        background-color: rgba(0, 0, 0, 0.616);
-        background-blend-mode: darken;
 
-        .birdwrapper {
-          h2 {
-            color: #1f6d86;
-            margin-left: -9rem;
+        .BirdStats:nth-child(1) {
+          background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg")
+            no-repeat center/cover;
+          background-color: rgba(0, 0, 0, 0.616);
+
+          background-blend-mode: darken;
+        }
+        .BirdStats:nth-child(2) {
+          background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg")
+            no-repeat center/cover;
+          background-color: rgba(0, 0, 0, 0.616);
+
+          background-blend-mode: darken;
+
+          .birdwrapper {
+            h2 {
+              margin-left: -9rem;
+              color: rgba(255, 255, 255, 0.774);
+            }
+            h4 {
+              color: #ffffff8c;
+            }
+            button {
+              background: #010507;
+            }
           }
-          h4 {
-            color: #597f9f;
-          }
-          button {
-            background: #08242f;
+        }
+        .BirdStats:nth-child(3) {
+          background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg")
+            no-repeat center/cover;
+          background-color: rgba(0, 0, 0, 0.616);
+          background-blend-mode: darken;
+
+          .birdwrapper {
+            h2 {
+              color: #1f6d86;
+              margin-left: -9rem;
+            }
+            h4 {
+              color: #597f9f;
+            }
+            button {
+              background: #08242f;
+            }
           }
         }
       }
@@ -182,8 +187,22 @@
         }
       }
 
-      .BirdStats {
-        padding: 4rem 1rem;
+      .statbox {
+        .birddiv {
+          .BirdStats,
+          .BirdStats:nth-child(2),
+          .BirdStats:nth-child(3) {
+            padding: 4rem 1rem;
+
+            .birdwrapper {
+              margin: 1rem;
+
+              h2 {
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
   }
