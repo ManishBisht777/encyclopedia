@@ -150,51 +150,67 @@
       overscroll-behavior: none;
   width: 100%;
   min-height: 100vh;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 3rem;
   background: #001929;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.home .wildLifeStats .typebx .card {
-  width: 300px;
-  height: 250px;
-  border-radius: 1rem;
-  overflow: hidden;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+.home .wildLifeStats .typebx .type {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  justify-content: center;
 }
-.home .wildLifeStats .typebx .card img {
+.home .wildLifeStats .typebx .type .card {
+  width: 200px;
+  height: 150px;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+.home .wildLifeStats .typebx .type .card img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home .wildLifeStats .typebx .card:hover {
-  scale: 1.3;
-  transition: 0.3s ease-in-out;
-  z-index: 10;
-}
-.home .wildLifeStats .typebx .card::after {
-  content: "View Details";
-  font-size: 2rem;
+.home .wildLifeStats .typebx .type .card .info {
   position: absolute;
-  font-weight: 700;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.445);
   width: 100%;
-  min-height: 100%;
-  background: rgba(0, 0, 0, 0.616);
-  color: rgba(255, 255, 255, 0.582);
-  display: none;
-  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
-}
-.home .wildLifeStats .typebx .card:hover::after {
+  height: 30%;
+  color: rgba(255, 255, 255, 0.5490196078);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.home .wildLifeStats .typebx .type::before {
+  content: "Threatned";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  top: 10%;
+  color: rgba(255, 255, 255, 0.568);
+  width: 100%;
+  z-index: 10;
+}
+.home .wildLifeStats .morediv {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: rgb(0, 183, 255);
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {

@@ -3,10 +3,13 @@ import Slider from "../components/LandingPageslider/slider";
 import "./home.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { data } from "../data/type";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+  console.log(data[1]);
+
   const bgref = useRef(null);
 
   useEffect(() => {
@@ -60,6 +63,34 @@ const Home = () => {
         },
         // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=" + (sections.length - 1) * 650,
+      },
+    });
+
+    gsap.to("#type1", {
+      ease: "none",
+      xPercent: -50,
+      scrollTrigger: {
+        trigger: ".morediv",
+        end: "top bottom",
+        scrub: 1,
+      },
+    });
+    gsap.to("#type2", {
+      ease: "none",
+      xPercent: 50,
+      scrollTrigger: {
+        trigger: ".morediv",
+        end: "top bottom",
+        scrub: 1,
+      },
+    });
+    gsap.to("#type3", {
+      ease: "none",
+      xPercent: -50,
+      scrollTrigger: {
+        trigger: ".morediv",
+        end: "top center",
+        scrub: 1,
       },
     });
   }, []);
@@ -171,25 +202,54 @@ const Home = () => {
           </div>
         </section>
         <section className="typebx">
-          <div className="card">
-            <img
-              src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg"
-              alt=""
-            />
+          <div className="type" id="type1">
+            {data &&
+              data[0].Critically_Endangered.map((animal, index) => {
+                console.log(animal.image);
+
+                return (
+                  <div className="card" key={animal.name}>
+                    <img
+                      src={require(`../assets/animal images/AfricanForestElephant.jpg`)}
+                      alt=""
+                    />
+                    <div className="info">{animal.name}</div>
+                  </div>
+                );
+              })}
           </div>
-          <div className="card">
-            <img
-              src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg"
-              alt=""
-            />
+
+          <div className="type" id="type2">
+            {data &&
+              data[1].Endangered.map((animal, index) => {
+                return (
+                  <div className="card" key={animal.name}>
+                    <img
+                      src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg"
+                      alt=""
+                    />
+                    <div className="info">{animal.name}</div>
+                  </div>
+                );
+              })}
           </div>
-          <div className="card">
-            <img
-              src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg"
-              alt=""
-            />
+          <div className="type" id="type3">
+            {data &&
+              data[2].Vulnerable.map((animal, index) => {
+                return (
+                  <div className="card" key={animal.name}>
+                    <img
+                      src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg"
+                      alt=""
+                    />
+                    <div className="info">{animal.name}</div>
+                  </div>
+                );
+              })}
           </div>
         </section>
+
+        <section className="morediv">Thats all</section>
       </div>
     </div>
   );

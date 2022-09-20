@@ -2,8 +2,6 @@ import React from "react";
 import "./style.css";
 
 const Slide = ({ data }) => {
-  console.log(data.type);
-
   return (
     <main>
       <div className="slider">
