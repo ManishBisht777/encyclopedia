@@ -180,7 +180,7 @@
   position: absolute;
   bottom: 0;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.445);
+  background: rgba(0, 0, 0, 0.623);
   width: 100%;
   height: 30%;
   color: rgba(255, 255, 255, 0.5490196078);
@@ -189,7 +189,7 @@
   align-items: center;
 }
 .home .wildLifeStats .typebx .type::before {
-  content: "Threatned";
+  content: "Critically Endangered";
   position: absolute;
   display: flex;
   justify-content: center;
@@ -199,6 +199,12 @@
   color: rgba(255, 255, 255, 0.568);
   width: 100%;
   z-index: 10;
+}
+.home .wildLifeStats .typebx .type:nth-child(2)::before {
+  content: "Threatned";
+}
+.home .wildLifeStats .typebx .type:nth-child(3)::before {
+  content: "Vulnerable";
 }
 .home .wildLifeStats .morediv {
   width: 100%;

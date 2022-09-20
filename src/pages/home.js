@@ -4,6 +4,7 @@ import "./home.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { data } from "../data/type";
+import getImageByKey from "../Imagemapping";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -209,10 +210,7 @@ const Home = () => {
 
                 return (
                   <div className="card" key={animal.name}>
-                    <img
-                      src={require(`../assets/animal images/AfricanForestElephant.jpg`)}
-                      alt=""
-                    />
+                    <img src={getImageByKey(animal.image)} alt={animal.name} />
                     <div className="info">{animal.name}</div>
                   </div>
                 );
@@ -224,10 +222,7 @@ const Home = () => {
               data[1].Endangered.map((animal, index) => {
                 return (
                   <div className="card" key={animal.name}>
-                    <img
-                      src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg"
-                      alt=""
-                    />
+                    <img src={getImageByKey(animal.image)} alt={animal.name} />
                     <div className="info">{animal.name}</div>
                   </div>
                 );
@@ -238,10 +233,7 @@ const Home = () => {
               data[2].Vulnerable.map((animal, index) => {
                 return (
                   <div className="card" key={animal.name}>
-                    <img
-                      src="https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg"
-                      alt=""
-                    />
+                    <img src={getImageByKey(animal.image)} alt={animal.name} />
                     <div className="info">{animal.name}</div>
                   </div>
                 );

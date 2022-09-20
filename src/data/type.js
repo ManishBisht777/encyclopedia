@@ -1,32 +1,32 @@
-import "../assets/animal images/AfricanForestElephant.jpg";
+import "../assets/animal_images/AfricanForestElephant.jpg";
 
 export const data = [
   {
     Critically_Endangered: [
       {
         name: "African forest elephant",
-        image: "../assets/animal images/AfricanForestElephant.jpg",
+        image: "AfricanForestElephant",
       },
       {
         name: "Amur Leopard",
-        image: "",
+        image: "AmurLeopard",
       },
       {
         name: "Black Rhino",
-        image: "",
+        image: "BlackRhino",
       },
       {
         name: "Bornean Orangutan",
-        image: "",
+        image: "BorneanOrangutan",
       },
       ,
       {
         name: "Eastern Lowland Gorilla",
-        image: "",
+        image: "EasternGorilla",
       },
       {
         name: "Hawksbill Turtle",
-        image: "",
+        image: "hawkWhiteSkark",
       },
     ],
   },
@@ -35,27 +35,27 @@ export const data = [
     Endangered: [
       {
         name: "African savanna elephant",
-        image: "",
+        image: "SavannahElephant",
       },
       {
         name: "African Wild Dog",
-        image: "",
+        image: "WildDogs",
       },
       {
         name: "Black-footed Ferret",
-        image: "",
+        image: "ferret",
       },
       {
         name: "Blue Whale",
-        image: "",
+        image: "BlueWhale",
       },
       {
         name: "Bluefin Tuna",
-        image: "",
+        image: "BluefinTuna",
       },
       {
         name: "Bonobo",
-        image: "",
+        image: "Bononno",
       },
     ],
   },
@@ -63,27 +63,27 @@ export const data = [
     Vulnerable: [
       {
         name: "Bigeye Tuna",
-        image: "",
+        image: "BigeyeTuna",
       },
       {
         name: "Black Spider Monkey",
-        image: "",
+        image: "BlackSpiderMonkey",
       },
       {
         name: "Dugong",
-        image: "",
+        image: "Dugong",
       },
       {
         name: "Giant Panda",
-        image: "",
+        image: "Panda",
       },
       {
         name: "Giant Tortoise",
-        image: "",
+        image: "Totrise",
       },
       {
         name: "Great White Shark",
-        image: "",
+        image: "GreatWhiteShark",
       },
     ],
   },
