@@ -1,5 +1,3 @@
-import "../assets/animal_images/AfricanForestElephant.jpg";
-
 export const data = [
   {
     Critically_Endangered: [
@@ -19,7 +17,6 @@ export const data = [
         name: "Bornean Orangutan",
         image: "BorneanOrangutan",
       },
-      ,
       {
         name: "Eastern Lowland Gorilla",
         image: "EasternGorilla",
@@ -30,7 +27,6 @@ export const data = [
       },
     ],
   },
-
   {
     Endangered: [
       {

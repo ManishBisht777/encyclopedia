@@ -1,9 +1,8 @@
 import data from "../../data/data.json";
 import Slide from "../LandingSlide/slide";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation } from "swiper";
+import { EffectFade, Autoplay } from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 const Slider = () => {
@@ -13,11 +12,12 @@ const Slider = () => {
       spaceBetween={30}
       loop={true}
       effect="fade"
-      pagination={{
-        clickable: true,
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
       }}
       navigation={true}
-      modules={[Navigation, EffectFade]}
+      modules={[EffectFade, Autoplay]}
     >
       {data &&
         data.map((slidedata, index) => {

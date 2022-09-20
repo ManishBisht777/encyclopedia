@@ -9,8 +9,6 @@ import getImageByKey from "../Imagemapping";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  console.log(data[1]);
-
   const bgref = useRef(null);
 
   useEffect(() => {
@@ -47,8 +45,6 @@ const Home = () => {
 
   useEffect(() => {
     let sections = gsap.utils.toArray(".BirdStats");
-
-    console.log(sections.length);
 
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
@@ -205,9 +201,7 @@ const Home = () => {
         <section className="typebx">
           <div className="type" id="type1">
             {data &&
-              data[0].Critically_Endangered.map((animal, index) => {
-                console.log(animal.image);
-
+              data[0].Critically_Endangered.map((animal) => {
                 return (
                   <div className="card" key={animal.name}>
                     <img src={getImageByKey(animal.image)} alt={animal.name} />
@@ -219,7 +213,7 @@ const Home = () => {
 
           <div className="type" id="type2">
             {data &&
-              data[1].Endangered.map((animal, index) => {
+              data[1].Endangered.map((animal) => {
                 return (
                   <div className="card" key={animal.name}>
                     <img src={getImageByKey(animal.image)} alt={animal.name} />
@@ -230,7 +224,7 @@ const Home = () => {
           </div>
           <div className="type" id="type3">
             {data &&
-              data[2].Vulnerable.map((animal, index) => {
+              data[2].Vulnerable.map((animal) => {
                 return (
                   <div className="card" key={animal.name}>
                     <img src={getImageByKey(animal.image)} alt={animal.name} />
