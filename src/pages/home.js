@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { data } from "../data/type";
 import getImageByKey from "../Imagemapping";
+import Footer from "../components/footer/footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -235,8 +236,14 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="morediv">Thats all</section>
+        <section className="saveanimal">
+          <div className="sectionheading">
+            <h3>Save Animals</h3>
+          </div>
+        </section>
       </div>
+
+      <Footer />
     </div>
   );
 };
