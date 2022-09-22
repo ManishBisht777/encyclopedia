@@ -1,4 +1,5 @@
 import React from "react";
+import getImageByKey from "../../Imagemapping";
 import "./style.css";
 
 const Slide = ({ data }) => {
@@ -7,7 +8,7 @@ const Slide = ({ data }) => {
       <div className="slider">
         <div className="logo">Adventure</div>
         <div className="slidebg">
-          <img src={data.type.background} alt="not found" />
+          <img src={getImageByKey(data.type.background)} alt="not found" />
         </div>
         <div className="slideinfo">
           <h1>{data.type.title}</h1>
@@ -31,7 +32,9 @@ const Slide = ({ data }) => {
               <span> {data.type.extinct}</span> Total hehe ok
             </p>
           </div>
-          <button>Next</button>
+          <button>
+            <a href="#home">Next</a>
+          </button>
         </div>
       </div>
     </main>

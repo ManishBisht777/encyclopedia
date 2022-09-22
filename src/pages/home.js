@@ -68,7 +68,7 @@ const Home = () => {
       ease: "none",
       xPercent: -50,
       scrollTrigger: {
-        trigger: ".morediv",
+        trigger: ".saveanimal",
         end: "top bottom",
         scrub: 1,
       },
@@ -77,7 +77,7 @@ const Home = () => {
       ease: "none",
       xPercent: 50,
       scrollTrigger: {
-        trigger: ".morediv",
+        trigger: ".saveanimal",
         end: "top bottom",
         scrub: 1,
       },
@@ -86,7 +86,7 @@ const Home = () => {
       ease: "none",
       xPercent: -50,
       scrollTrigger: {
-        trigger: ".morediv",
+        trigger: ".saveanimal",
         end: "top center",
         scrub: 1,
       },
@@ -98,7 +98,7 @@ const Home = () => {
       <div className="HomePageSlider">
         <Slider />
       </div>
-      <div className="wildLifeStats">
+      <div className="wildLifeStats" id="home">
         <div ref={bgref} className="WildLifeHeadingbg"></div>
         <div className="WildLifeHeading">
           <h2 id="wildheading">
@@ -122,19 +122,19 @@ const Home = () => {
               </div>
               <div className="birdwrapper">
                 <h2>Birds</h2>
-                <h4>Total Species</h4>
+                <h4>Endangered</h4>
                 <p>
-                  We see that there are more than 11,000 described bird species
-                  in the world.
+                  Almost 1,500 bird species are threatened with extinction
+                  across the world.
                 </p>
                 <button>View Article</button>
               </div>
               <div className="birdwrapper">
                 <h2>Birds</h2>
-                <h4>Total Species</h4>
+                <h4>Extinct</h4>
                 <p>
-                  We see that there are more than 11,000 described bird species
-                  in the world.
+                  Its estimated that 159 bird species have gone extinct since
+                  1500.
                 </p>
                 <button>View Article</button>
               </div>
@@ -151,10 +151,11 @@ const Home = () => {
               </div>
               <div className="birdwrapper">
                 <h2>Animals</h2>
-                <h4>Total Species</h4>
+                <h4>Endangered</h4>
                 <p>
-                  We see that there are more than 11,000 described bird species
-                  in the world.
+                  There are over 16,300 species believed to be endangered,
+                  according to the International Union for Conservation of
+                  Nature (IUCN),
                 </p>
                 <button>View Article</button>
               </div>

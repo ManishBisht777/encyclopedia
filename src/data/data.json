@@ -1,7 +1,7 @@
 [
   {
     "type": {
-      "background": "https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg",
+      "background": "WildLifebg",
       "title": "Wildlife",
       "description": "Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.",
       "total": 100,
@@ -11,8 +11,8 @@
   },
   {
     "type": {
-      "background": "https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg",
-      "title": "IN SKY",
+      "background": "BirdBg",
+      "title": "SKY",
       "description": "Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.",
       "total": 100,
       "endangered": 200,
@@ -21,8 +21,8 @@
   },
   {
     "type": {
-      "background": "https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg",
-      "title": "IN WATER",
+      "background": "Turtlebg",
+      "title": "WATER",
       "description": "Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.",
       "total": 100,
       "endangered": 200,
@@ -31,8 +31,8 @@
   },
   {
     "type": {
-      "background": "https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412462/encyclopedia/backgrounds/bgReindeer_wqyl5z.jpg",
-      "title": "IN WATER",
+      "background": "Reindeerbg",
+      "title": "JUNGLE",
       "description": "Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans.",
       "total": 100,
       "endangered": 200,

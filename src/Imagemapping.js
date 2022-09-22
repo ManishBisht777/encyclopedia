@@ -17,7 +17,22 @@ import SavannahElephant from "./assets/animal_images/SavannahElephant.jpg";
 import Totrise from "./assets/animal_images/Totrise.jpg";
 import WildDogs from "./assets/animal_images/WildDogs.jpg";
 
+// background import
+
+import Turtlebg from "./assets/backgrounds/bg6.jpg";
+import WildLifebg from "./assets/backgrounds/bgWildLife.jpg";
+import BirdBg from "./assets/backgrounds/bgBird.jpg";
+import Reindeerbg from "./assets/backgrounds/bgReindeer.jpg";
+import bg1 from "./assets/backgrounds/bg.jpg";
+import bg2 from "./assets/backgrounds/bg2.jpg";
+
 const images = {
+  Turtlebg,
+  Reindeerbg,
+  WildLifebg,
+  BirdBg,
+  bg1,
+  bg2,
   AfricanForestElephant,
   AmurLeopard,
   BigeyeTuna,

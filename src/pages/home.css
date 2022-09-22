@@ -109,12 +109,12 @@
   color: rgba(202, 202, 202, 0.712);
 }
 .home .wildLifeStats .statbox .birddiv .BirdStats:nth-child(1) {
-  background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412467/encyclopedia/backgrounds/bgBird_sarak9.jpg") no-repeat center/cover;
+  background: url("../assets/backgrounds/bgBird.jpg") no-repeat center/cover;
   background-color: rgba(0, 0, 0, 0.616);
   background-blend-mode: darken;
 }
 .home .wildLifeStats .statbox .birddiv .BirdStats:nth-child(2) {
-  background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663405212/encyclopedia/backgrounds/bgWildLife_qfqpuk.jpg") no-repeat center/cover;
+  background: url("../assets/backgrounds/bgWildLife.jpg") no-repeat center/cover;
   background-color: rgba(0, 0, 0, 0.616);
   background-blend-mode: darken;
 }
@@ -129,7 +129,7 @@
   background: #010507;
 }
 .home .wildLifeStats .statbox .birddiv .BirdStats:nth-child(3) {
-  background: url("https://res.cloudinary.com/drsm0ncyx/image/upload/v1663412862/encyclopedia/backgrounds/bg6_zafhwx.jpg") no-repeat center/cover;
+  background: url("../assets/backgrounds/bg6.jpg") no-repeat center/cover;
   background-color: rgba(0, 0, 0, 0.616);
   background-blend-mode: darken;
 }
@@ -223,6 +223,7 @@
   font-size: 5rem;
   background: url("../assets/backgrounds/bg2.jpg") no-repeat center/cover;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
   display: block;
 }
